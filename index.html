@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keith John's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">KMK</div>
+      <div class="menu-toggle" aria-label="Mobile menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#quizzes">Quizzes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Home Section -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Hi, I'm Keith John!<br/>Creative</h1>
+        <p class="subtitle">Aspiring Web Developer</p>
+        <div class="social-links">
+          <a href="https://github.com/kmk152118/WebPortfolio/raw/main/about/Mandac_CV.pdf" target="_blank" download class="social-btn" aria-label="Download CV">
+            <span class="icon-circle"></span>
+            <span class="social-text">CV</span>
+          </a>
+          <a href="https://www.facebook.com/Kthjhn.Mandac" target="_blank" class="social-btn" aria-label="Facebook">
+            <span class="icon-circle"></span>
+            <span class="social-text">Facebook</span>
+          </a>
+          <a href="mailto:neversurrenderokj@gmail.com" class="social-btn" aria-label="Email">
+            <span class="icon-circle"></span>
+            <span class="social-text">Gmail</span>
+          </a>
+          <a href="https://github.com/kmk152118" target="_blank" class="social-btn" aria-label="GitHub">
+            <span class="icon-circle"></span>
+            <span class="social-text">GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-img">
+        <img src="profile.jpg" alt="My Photo" loading="lazy">
+      </div>
+
+      
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <div class="about-text">
+          <p>
+            👋 I'm <strong>Keith John D. Mandac</strong>, a third-year Information Technology student at Cavite State University - Silang Campus. I have basic knowledge in web development and I'm constantly improving by exploring new tech and building personal projects.
+          </p>
+          <p>
+            🎮 Outside of coding, I'm a gamer who loves exploring fantasy worlds and competitive gameplay. 💃 I also enjoy dancing! I used to dance a lot and still love expressing myself through rhythm and movement — it keeps me inspired and confident.
+          </p>
+          <p>
+            👨‍👦 Most of all, I enjoy bonding with my family and spending quality time with my son. Being a dad gives me purpose and motivates me to keep learning and growing — both as a developer and as a person.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="3.jpg" alt="Profile" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+          <h2 class="section-title">My Projects</h2>
+          
+          <div class="project-card">
+            <div class="project-content">
+              <h3 class="project-title">Genshin Impact Guide</h3>
+              <p class="project-description">
+                A comprehensive guide to the world of Genshin Impact featuring detailed character profiles, 
+                gameplay mechanics, and interactive maps showing enemy locations. Designed to help both new 
+                players and seasoned travelers navigate Teyvat more effectively.
+              </p>
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <a href="https://kmk152118.github.io/genshin-impact-project/" 
+                 target="_blank" 
+                 class="project-link">
+                View Project
+              </a>
+            </div>
+            
+            <div class="project-gallery">
+              <div class="gallery-container">
+                <img src="/project/gen1.jpg" alt="Genshin Impact Character Profiles" class="project-image">
+                <img src="/project/gen2.jpg" alt="Genshin Impact Gameplay Guide" class="project-image">
+                <img src="/project/gen3.jpg" alt="Genshin Impact World Map" class="project-image">
+              </div>
+              <div class="gallery-nav">
+                <button class="gallery-prev">❮</button>
+                <button class="gallery-next">❯</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Quiz Section -->
+    <!-- Quiz Section -->
+<section id="quizzes" class="quiz-section">
+    <div class="container">
+      <h2 class="section-title">Quizzes</h2>
+      
+      <div class="quiz-gallery">
+        <!-- Pretest 1-5 -->
+        <div class="quiz-card" onclick="openLightbox('/quiz/pre1.png', 'PRETEST1')">
+          <img src="/quiz/pre1.png" alt="PRETEST1 Quiz">
+          <div class="quiz-overlay">
+            <h3>PRETEST1</h3>
+          </div>
+        </div>
+        
+        <div class="quiz-card" onclick="openLightbox('/quiz/pre2.png', 'PRETEST2')">
+          <img src="/quiz/pre2.png" alt="PRETEST2 Quiz">
+          <div class="quiz-overlay">
+            <h3>PRETEST2</h3>
+          </div>
+        </div>
+
+        <div class="quiz-card" onclick="openLightbox('/quiz/pre3.png', 'PRETEST3')">
+            <img src="/quiz/pre3.png" alt="PRETEST3 Quiz">
+            <div class="quiz-overlay">
+              <h3>PRETEST3</h3>
+            </div>
+          </div>
+
+          <div class="quiz-card" onclick="openLightbox('/quiz/pre4.png', 'PRETEST4')">
+            <img src="/quiz/pre4.png" alt="PRETEST4 Quiz">
+            <div class="quiz-overlay">
+              <h3>PRETEST4</h3>
+            </div>
+          </div>
+
+          <div class="quiz-card" onclick="openLightbox('/quiz/pre5.png', 'PRETEST5')">
+            <img src="/quiz/pre5.png" alt="PRETEST5 Quiz">
+            <div class="quiz-overlay">
+              <h3>PRETEST5</h3>
+            </div>
+          </div>
+        
+        <!-- Add remaining pretests 3-5 here -->
+        
+        <!-- Regular Quizzes -->
+        <div class="quiz-card" onclick="openLightbox('/quiz/q1.jpg', 'QUIZ1')">
+          <img src="/quiz/q1.jpg" alt="QUIZ1">s
+          <div class="quiz-overlay">
+            <h3>QUIZ 1</h3>
+          </div>
+        </div>
+
+        <div class="quiz-card" onclick="openLightbox('/quiz/q4.jpg', 'QUIZ4')">
+            <img src="/quiz/q4.jpg" alt="QUIZ4">
+            <div class="quiz-overlay">
+              <h3>QUIZ 4</h3>
+            </div>
+          </div>
+
+          <div class="quiz-card" onclick="openLightbox('/quiz/q5.jpg', 'QUIZ5 ')">
+            <img src="/quiz/q5.jpg" alt="QUIZ5">
+            <div class="quiz-overlay">
+              <h3>QUIZ 5</h3>
+            </div>
+          </div>
+
+          <div class="quiz-card" onclick="openLightbox('/quiz/l1.jpg', 'LONGQUIZ1')">
+            <img src="quiz/l1.jpg" alt="LONGQUIZ1">
+            <div class="quiz-overlay">
+              <h3>LONGQUIZ1</h3>
+            </div>
+          </div>
+
+          <div class="quiz-card" onclick="openLightbox('/quiz/m1.jpg', 'MIDTERM')">
+            <img src="/quiz/m1.jpg" alt="QUIZ1">
+            <div class="quiz-overlay">
+              <h3>MIDTERM</h3>
+            </div>
+          </div>
+        
+        <!-- Add other quizzes (Q4, Q5, Long Quiz, Midterm) following same pattern -->
+      </div>
+    </div>
+  
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+      <div id="lightbox-caption"></div>
+    </div>
+  </section>
+
+    
+    <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="contact-subtitle">
+        Let's connect! You can reach me through these links:
+      </p>
+  
+      <div class="social-links-container">
+        <!-- CV -->
+        <div class="social-btn-row">
+          <a href="https://github.com/kmk152118/WebPortfolio/raw/main/about/Mandac_CV.pdf" 
+             target="_blank" download class="social-btn" id="cv-btn">
+            <span class="icon-circle"></span>
+            <span class="social-text">Download CV</span>
+          </a>
+          
+        </div>
+        
+        <!-- Facebook -->
+        <div class="social-btn-row">
+          <a href="https://www.facebook.com/Kthjhn.Mandac" 
+             target="_blank" class="social-btn" id="fb-btn">
+            <span class="icon-circle"></span>
+            <span class="social-text">Facebook</span>
+          </a>
+          
+        </div>
+        
+        <!-- Email -->
+        <div class="social-btn-row">
+          <a href="mailto:neversurrenderokj@gmail.com" 
+             class="social-btn" id="mail-btn">
+            <span class="icon-circle"></span>
+            <span class="social-text">Email</span>
+          </a>
+          
+        </div>
+        
+        <!-- GitHub -->
+        <div class="social-btn-row">
+          <a href="https://github.com/kmk152118" 
+             target="_blank" class="social-btn" id="github-btn">
+            <span class="icon-circle"></span>
+            <span class="social-text">GitHub</span>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Keith John Mandac. All rights reserved.</p>
+  </footer>
+
+  <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  // Toggle mobile menu
+  menuToggle.addEventListener('click', function() {
+    this.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    
+    // Toggle body scroll when menu is open
+    document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+  });
+
+  // Close menu when clicking links
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      menuToggle.classList.remove('active');
+      navLinks.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  });
+});
+
+
+
+
+// Lightbox functionality
+function openLightbox(imageSrc, caption) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  
+  lightbox.style.display = "block";
+  lightboxImg.src = imageSrc;
+  lightboxCaption.textContent = caption;
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = "none";
+}
+
+// Close when clicking outside image
+window.onclick = function(event) {
+  const lightbox = document.getElementById('lightbox');
+  if (event.target == lightbox) {
+    closeLightbox();
+  }
+}
+
+
+
+// Smooth scrolling for navigation links
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  // Mobile menu toggle
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Form submission
+  const contactForm = document.getElementById('contact-form');
+  const formMessage = document.getElementById('form-message');
+
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    formMessage.textContent = "Message sent! I'll get back to you soon.";
+    formMessage.style.color = "green";
+    contactForm.reset();
+    setTimeout(() => (formMessage.textContent = ""), 3000);
+  });
+});
+
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Form submission
+    const contactForm = document.getElementById('contact-form');
+    const formMessage = document.getElementById('form-message');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      formMessage.textContent = "Message sent! I'll get back to you soon.";
+      formMessage.style.color = "green";
+      contactForm.reset();
+      setTimeout(() => formMessage.textContent = "", 3000);
+    });
+  </script>
+</body>
+</html>
